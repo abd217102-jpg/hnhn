@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>عبد الرحمن الحنحنه | Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <style>
+        :root {
+            --primary-color: #f15a24; 
+            --accent-color: #ffd700; 
+            --secondary-color: #f8f9fa; 
+            --text-color: #2c2c2c; 
+            --white: #ffffff;
+            --navbar-bg: rgba(255, 255, 255, 0.95);
+            --shadow: 0 10px 30px rgba(0,0,0,0.08);
+            --transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Cairo', sans-serif;
+        }
+
+        body {
+            color: var(--text-color);
+            background-color: var(--white);
+            line-height: 1.6;
+            overflow-x: hidden;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23ffd700' fill-opacity='0.03'%3E%3Cpath d='M96 95h4v1h-4v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9zm-1 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        }
+
+        a { text-decoration: none; color: inherit; transition: var(--transition); }
+
+        /* --- Navbar --- */
+        header {
+            background-color: var(--navbar-bg);
+            box-shadow: var(--shadow);
+            position: fixed;
+            top: 0; width: 100%; z-index: 1000;
+            backdrop-filter: blur(10px);
+        }
+
+        .navbar {
+            display: flex; justify-content: space-between; align-items: center;
+            padding: 15px 10%; max-width: 1400px; margin: 0 auto;
+        }
+
+        .logo { font-size: 24px; font-weight: 700; }
+        .logo span { color: var(--primary-color); }
+
+        .nav-links { list-style: none; display: flex; gap: 25px; }
+        .nav-links li a { font-size: 15px; font-weight: 600; }
+        .nav-links li a:hover { color: var(--primary-color); }
+
+        .btn-resume {
+            background: var(--primary-color); color: var(--white);
+            padding: 8px 20px; border-radius: 50px; font-weight: 700;
+            display: flex; align-items: center; gap: 8px; font-size: 14px;
+        }
+
+        /* --- Hero Section --- */
+        .hero {
+            display: flex; justify-content: space-between; align-items: center;
+            padding: 160px 10% 100px; max-width: 1400px; margin: 0 auto; min-height: 90vh;
+        }
+
+        .hero-content { flex: 1.2; padding-left: 5%; }
+        .hero-content h4 { color: var(--primary-color); font-size: 18px; margin-bottom: 10px; }
+        .hero-content h1 { font-size: 56px; margin-bottom: 10px; line-height: 1.2; }
+        .hero-content h1 span { color: var(--primary-color); }
+        .hero-content h3 { font-size: 22px; color: #666; margin-bottom: 25px; font-weight: 400; }
+        .hero-content p { font-size: 17px; color: #777; margin-bottom: 35px; max-width: 550px; }
+
+        .hero-image-container { flex: 0.8; position: relative; display: flex; justify-content: center; }
+        .main-circle {
+            width: 350px; height: 350px; border-radius: 50%;
+            border: 4px solid var(--accent-color);
+            box-shadow: 0 0 30px rgba(255, 215, 0, 0.3);
+            overflow: hidden; position: relative; z-index: 5;
+        }
+        .main-circle img { width: 100%; height: 100%; object-fit: cover; }
+
+        .badge {
+            background: var(--white); padding: 8px 15px; border-radius: 50px;
+            box-shadow: var(--shadow); position: absolute; font-weight: 700; font-size: 13px;
+            animation: float 4s ease-in-out infinite; z-index: 10;
+        }
+        .badge-1 { top: 10%; right: -5%; }
+        .badge-2 { bottom: 20%; right: -10%; background: var(--primary-color); color: #fff; }
+        .badge-3 { bottom: 10%; left: -5%; }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-15px); }
+        }
+
+        /* --- Sections Style --- */
+        section { padding: 80px 10%; max-width: 1400px; margin: 0 auto; }
+        .section-title { text-align: center; margin-bottom: 50px; }
+        .section-title h2 { font-size: 32px; position: relative; display: inline-block; padding-bottom: 10px; }
+        .section-title h2::after {
+            content: ''; position: absolute; bottom: 0; left: 50%; transform: translateX(-50%);
+            width: 60px; height: 3px; background: var(--primary-color);
+        }
+
+        /* --- Services Grid --- */
+        .services-grid {
+            display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px;
+        }
+        .service-card {
+            background: var(--white); padding: 40px 30px; border-radius: 20px;
+            text-align: center; box-shadow: var(--shadow); transition: var(--transition);
+        }
+        .service-card:hover { transform: translateY(-10px); }
+        .service-card i { font-size: 40px; color: var(--primary-color); margin-bottom: 20px; }
+
+        /* --- Portfolio Grid --- */
+        .portfolio-grid {
+            display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 30px;
+        }
+        .project-card {
+            background: var(--white); border-radius: 20px; overflow: hidden; box-shadow: var(--shadow);
+        }
+        .project-info { padding: 25px; }
+        .project-info h4 { margin-bottom: 10px; font-size: 20px; }
+        .project-info p { font-size: 14px; color: #777; }
+
+        footer { background: #1a1a1a; color: #fff; padding: 40px 10%; text-align: center; }
+        .social-links { margin-bottom: 20px; }
+        .social-links a { font-size: 24px; margin: 0 15px; color: #999; }
+        .social-links a:hover { color: var(--primary-color); }
+
+        @media (max-width: 992px) {
+            .hero { flex-direction: column; text-align: center; padding-top: 120px; }
+            .hero-content { padding-left: 0; margin-bottom: 50px; }
+            .main-circle { width: 280px; height: 280px; }
+            .nav-links { display: none; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">عبدالرحمن<span>.</span></div>
+            <ul class="nav-links">
+                <li><a href="#home">الرئيسية</a></li>
+                <li><a href="#about">حول</a></li>
+                <li><a href="#services">الخدمات</a></li>
+                <li><a href="#portfolio">أعمالي</a></li>
+            </ul>
+            <a href="#" class="btn-resume"><i class="fas fa-file-download"></i> السيرة الذاتية</a>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h4>مرحباً بك في عالمي التقني</h4>
+            <h1>أنا <span>عبد الرحمن الحنحنه</span></h1>
+            <h3>مطور برمجيات | طالب تكنولوجيا معلومات</h3>
+            <p>أقوم بتحويل الأفكار إلى واقع رقمي باستخدام Flutter و Python. متخصص في بناء تطبيقات الهاتف المحمول المبتكرة وبوتات الذكاء الاصطناعي الذكية.</p>
+            <a href="mailto:abd217102@gmail.com" class="btn-resume" style="padding: 15px 35px; font-size: 16px;">ابدأ مشروعك الآن</a>
+        </div>
+
+        <div class="hero-image-container">
+            <div class="main-circle">
+                <img src="gg.jpg" alt="Abdalrhman Alhnhnh">
+            </div>
+            <div class="badge badge-1"><i class="fab fa-flutter"></i> Flutter</div>
+            <div class="badge badge-2"><i class="fab fa-python"></i> Python</div>
+            <div class="badge badge-3"><i class="fas fa-code"></i> Dart</div>
+        </div>
+    </section>
+
+    <section id="about" style="background: var(--secondary-color);">
+        <div class="section-title">
+            <h2>من <span>أنا؟</span></h2>
+        </div>
+        <div style="max-width: 800px; margin: 0 auto; text-align: center;">
+            <p style="font-size: 18px; color: #555;">
+                أنا طالب في المستوى الرابع تخصص تقنية معلومات بكلية العلوم التطبيقية والتربوية بالنادرة - إب. أجمع بين الدراسة الأكاديمية والعمل التطبيقي لتطوير حلول برمجية تخدم المجتمع اليمني، مع شغف كبير بالأمن السيبراني والذكاء الاصطناعي.
+            </p>
+        </div>
+    </section>
+
+    <section id="services">
+        <div class="section-title">
+            <h2>ماذا <span>أقدم؟</span></h2>
+        </div>
+        <div class="services-grid">
+            <div class="service-card">
+                <i class="fas fa-mobile-alt"></i>
+                <h4>تطوير التطبيقات</h4>
+                <p>بناء تطبيقات متكاملة لنظامي Android و iOS باستخدام إطار العمل Flutter.</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-robot"></i>
+                <h4>بوتات الذكاء الاصطناعي</h4>
+                <p>تطوير Chatbots متقدمة باستخدام Python وتقنيات البحث الذكي.</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-user-shield"></i>
+                <h4>الاستشارات التقنية</h4>
+                <p>تقديم حلول في مجالات تقنية المعلومات وحماية البيانات الرقمية.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" style="background: var(--secondary-color);">
+        <div class="section-title">
+            <h2>نماذج <span>من مشاريعي</span></h2>
+        </div>
+        <div class="portfolio-grid">
+            <div class="project-card">
+                <div style="height: 200px; background: #e0e0e0; display: flex; align-items: center; justify-content: center;">
+                    <i class="fas fa-map-marked-alt" style="font-size: 60px; color: var(--primary-color);"></i>
+                </div>
+                <div class="project-info">
+                    <h4>Geographic Chatbot</h4>
+                    <p>بوت دردشة ذكي مبني بـ Python لتقديم معلومات جغرافية دقيقة عن 22 دولة عربية.</p>
+                </div>
+            </div>
+            <div class="project-card">
+                <div style="height: 200px; background: #e0e0e0; display: flex; align-items: center; justify-content: center;">
+                    <i class="fas fa-store" style="font-size: 60px; color: var(--primary-color);"></i>
+                </div>
+                <div class="project-info">
+                    <h4>Smart Haraj</h4>
+                    <p>مشروع التخرج: تطبيق سوق متكامل يخدم المجتمع اليمني لتسهيل عمليات البيع والشراء.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="social-links">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-github"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="https://wa.me/967775586617"><i class="fab fa-whatsapp"></i></a>
+        </div>
+        <p>&copy; 2026 عبد الرحمن الحنحنه. صنع بشغف لخدمة التكنولوجيا.</p>
+    </footer>
+
+    <script>
+        // التمرير السلس للروابط
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
